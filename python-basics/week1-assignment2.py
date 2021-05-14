@@ -37,7 +37,3 @@
 #pop.left(180)
 #pop.forward(76)
 # wn, jazz, pop
-
-
-
-

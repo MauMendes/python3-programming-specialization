@@ -1,3 +1,5 @@
+#### WEEK 1
+
 ### Values and Data Types
 #a = 100
 #b = 3.14
@@ -70,12 +72,14 @@
 #for _ in range(3):
 #    print(_)
 
-
 ### Importing Modules
 #import random
-from random import randrange, random
-prob = random()
-print(prob)
+#from random import randrange, random
+#prob = random()
+#print(prob)
 
-diceThrow = randrange(1,7)
-print(diceThrow)
+#diceThrow = randrange(1,7)
+#print(diceThrow)
+
+
+#### WEEK 2
