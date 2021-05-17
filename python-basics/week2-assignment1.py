@@ -38,3 +38,11 @@
 #b = "My, what a lovely day"
 #x = b.split(',')
 #D. list
+
+#sequences-10-6: What is the type of a?
+#b = "My, what a lovely day"
+#x = b.split(',')
+#z = "".join(x)
+#y = z.split()
+#a = "".join(y)
+#A. string

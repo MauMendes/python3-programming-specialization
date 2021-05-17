@@ -160,5 +160,20 @@
 #print(" ".join(words))
 #print("".join(words))
 
+### Iteration
+#for name in ["Joe", "Amy", "Brad", "Angelina", "Zuki", "Thandi", "Paris"]:
+#    print("Hi", name, "Please come to my party on Saturday!")
+
+### The Accumulator
+#nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+#accum = 0
+#for w in nums:
+#    accum = accum + w
+#print(accum)
+
+# Create a list, [0, 1, 2, .... 52]
+#numbers = list(range(0,53))
+
+
 
 
