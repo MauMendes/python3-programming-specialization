@@ -59,7 +59,6 @@
 #x +=3 same as x = x + 3 
 #y -=1 same as y = y - 1
 
-
 ### Turtle Graphics
 #import turtle
 #wn = turtle.Screen()
@@ -81,5 +80,85 @@
 #diceThrow = randrange(1,7)
 #print(diceThrow)
 
+# Syntax, Runtime, and Semantic Errors
+# print("hello"
+# Syntax Error
+# Runtime - 3/0 - Trying to divide by zero, ilegal operation
+# Semantic Error - Software work, but not as intented 
+
+#Write code to draw a regular pentagon (a five-sided figure with all sides the same length).
+#import turtle
+#wn = turtle.Screen()
+#jazz = turtle.Turtle()
+#for i in range(5):
+#   jazz.forward(100) #Assuming the side of a pentagon is 100 units
+#   jazz.left(72) #Turning the turtle by 72 degree
+
+# Write a program that uses the turtle module to draw something. It doesnt have to be complicated, 
+# but draw something different than we have done in the past. (Hint: if you are drawing something complicated, 
+# it could get tedious to watch it draw over and over. Try setting .speed(10) for the turtle to draw fast, or .speed(0) 
+# for it to draw super fast with no animation.)
+#import turtle
+#wn = turtle.Screen()
+#jazz = turtle.Turtle()
+#for i in range(5):
+#   jazz.forward(100) #Assuming the side of a pentagon is 100 units
+#   jazz.left(72) #Turning the turtle by 72 degree
+#   jazz.speed(i)
+
 
 #### WEEK 2
+### Strings
+### List
+### Turple
+#s = "Hello World"
+#mylist = [1, "mauricio", 34, "Male"]
+#tuples are immutable
+#tuples = (1, "mauricio", 34, "Male")
+
+#print(type(s))  #print type
+#print(s[0])     #print first letter, or fist item of the string
+#print(s[len(s)-1])  #print last character of the string
+#print(s[6:]) #usage of the slice operator. print from the 6th character until end 
+
+#print(tuples[2:]) #Note starts to print from item 2
+#print(tuples[:2]) #Note not printing the item 2
+#print(tuples[:-1]) #Note it is not going to print the last element
+
+#print(type(mylist))
+#print(type(tuples))
+
+#create tuples empty or one item
+#tuples = ()
+#tuples = (100,)
+#print(type(tuples))
+#print(len(tuples))
+
+### Concatenation
+#print([1,2]+[3,4])
+#fruit = ['apple', 'banana', 'kiwi']
+#print(fruit + [1, 2, 3])
+#print(fruit*2)  #prints twice the list, duplicating 
+
+### Count method
+#a = "I have had an apple on my desk before!"
+#print(a.count("e"))
+#print(a.count("ha"))
+
+### Index method
+#print(a.index("desk"))
+
+### Split method
+#song = "We are the champions"
+#print(song.split())
+#print(song.split("the"))
+
+### Join method
+#words = ["red", "blue", "green"]
+#glue = ";"
+#print(glue.join(words))
+#print(" ".join(words))
+#print("".join(words))
+
+
+
