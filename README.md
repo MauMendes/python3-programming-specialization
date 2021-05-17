@@ -1,4 +1,5 @@
 # Python 3 Programming Specialization
+Exercises and projects made in the Python 3 Programming Specialization offered by the University of Michigan.
 
 ### Python Basics  :heavy_check_mark:
 
