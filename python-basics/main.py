@@ -174,6 +174,84 @@
 # Create a list, [0, 1, 2, .... 52]
 #numbers = list(range(0,53))
 
+#### WEEK 3
+### Boolean Expressions
+#print(True)
+#print(type(True))
+#print(type(False))
+#print(5 == 5)
+#print(5 == 6)
+#x != y               # x is not equal to y
+#x > y                # x is greater than y
+#x < y                # x is less than y
+#x >= y               # x is greater than or equal to y
+#x <= y               # x is less than or equal to y
 
+### Logical Operators ( and, not, in)
+#x = 5
+#print(x>0 and x<10)
+#n = 25
+#print(n%2 == 0 or n%3 == 0)
+#print( not False )
 
+### Precedence of Operators
+#Level       Category        Operators
+#7(high)     exponent        **
+#6           multiplication  *,/,//,%
+#5           addition        +,-
+#4           relational      ==,!=,<=,>=,>,<
+#3           logical         not
+#2           logical         and
+#1(low)      logical         or
 
+### Conditional Execution
+#if BOOLEAN EXPRESSION:
+#    STATEMENTS_1        # executed if condition evaluates to True
+#else:
+#    STATEMENTS_2        # executed if condition evaluates to False
+
+### Conditional Execution
+#if x < y:
+#    print("x is less than y")
+#elif x > y:
+#    print("x is greater than y")
+#else:
+#   print("x and y must be equal")
+
+#str1 = "Today you are you! That is truer than true! There is no one alive who is you-er than you!"
+#if "false" in str1:
+#    output = "False. You aren’t you?"
+#elif "true" in str1:
+#    output = "True! You are you!"
+#else:
+#   output = "Neither true nor false!"
+
+#percent_rain = [94.3, 45, 100, 78, 16, 5.3, 79, 86]
+#resps = list()
+#for percent in percent_rain:
+#    if percent>90:
+#        resps.append("Bring an umbrella.")
+#    elif percent>80:
+#        resps.append("Good for the flowers?")
+#    elif percent>50:
+#        resps.append("Watch out for clouds!")
+#    else:
+#        resps.append("Nice day!")
+#print(resps)
+
+#words = ["water", "chair", "pen", "basket", "hi", "car"]
+#num_words = 0
+#for word in words:
+#    if(len(word)>3):
+#        num_words += 1
+
+#Challenge For each word in words, add ‘d’ to the end of the word if the word ends in “e” to make it past tense. Otherwise, add ‘ed’ to make it past tense. 
+# Save these past tense words to a list called past_tense.
+#words = ["adopt", "bake", "beam", "confide", "grill", "plant", "time", "wave", "wish"]
+#past_tense = list()
+#for word in words:
+#    if word[-1]=='e':
+#        past_tense.append(word+"d")
+#    else:
+#        past_tense.append(word+"ed")
+#print(past_tense)
