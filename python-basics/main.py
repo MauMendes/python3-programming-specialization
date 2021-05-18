@@ -321,7 +321,71 @@
 #print(a)
 #print(b)
 
+# Methods on lists
+#mylist = []
+#mylist.append(5)
+#mylist.append(27)
+#mylist.append(3)
+#mylist.append(12)
+#print(mylist)
+#mylist.insert(1, 12)
+#print(mylist)
+#print(mylist.count(12))
+#print(mylist.index(3))
+#print(mylist.count(5))
+#mylist.reverse()
+#print(mylist)
+#mylist.sort()
+#print(mylist)
+#mylist.remove(5)
+#print(mylist)
+#lastitem = mylist.pop()
+#print(lastitem)
+#print(mylist)
 
+# Methods on Strings
+#ss = "Hello, World"
+#print(ss.upper())
+#tt = ss.lower()
+#print(tt)
+#print(ss)
 
+#Method  Parameters  Description
+#upper   none        Returns a string in all uppercase
+#lower   none        Returns a string in all lowercase
+#count   item        Returns the number of occurrences of item
+#index   item        Returns the leftmost index where the substring item is found and causes a runtime error if item is not found
+#strip   none        Returns a string with the leading and trailing whitespace removed
+#replace old, new    Replaces all occurrences of old substring with new
+#format  substitutions   Involved! See String Format Method, below
 
+# Format
+#origPrice = float(input('Enter the original price: $'))
+#discount = float(input('Enter discount percentage: '))
+#newPrice = (1 - discount/100)*origPrice
+#calculation = '${} discounted by {}% is ${}.'.format(origPrice, discount, newPrice)
+#print(calculation)
+
+#name = "Sally"
+#greeting = "Nice to meet you"
+#s = "Hello, {}. {}."
+#print(s.format(name,greeting)) # will print Hello, Sally. Nice to meet you.
+#print(s.format(greeting,name)) # will print Hello, Nice to meet you. Sally.
+#print(s.format(name)) # 2 {}s, only one interpolation item! Not ideal.
+
+#v = 2.34567
+#print('{:.1f} {:.2f} {:.7f}'.format(v, v, v))
+
+#Accumulating Lists and Strings
+#For each word in the list verbs, add an -ing ending. Save this new list in a new list, ing.
+#verbs = ["kayak", "cry", "walk", "eat", "drink", "fly"]
+#ing = []
+#for verb in verbs:
+#    ing.append(verb+'ing')
+#print(ing)
+
+#Now do the same as in the previous problem, but do not create a new list. Overwrite the list numbs so that each of the original numbers are increased by 5.
+#numbs = [5, 10, 15, 20, 25]
+#for i in range(len(numbs)):
+#    numbs[i] = numbs[i]+5
 
