@@ -255,3 +255,73 @@
 #    else:
 #        past_tense.append(word+"ed")
 #print(past_tense)
+
+#### WEEK 4
+### MUTATION, SEQUENCES...
+
+# Lists are Mutable
+#fruit = ["banana", "apple", "cherry"]
+#print(fruit)
+#fruit[0] = "pear"
+#fruit[-1] = "orange"
+#print(fruit)
+#alist = ['a', 'b', 'c', 'd', 'e', 'f']
+#alist[1:3] = []
+#print(alist)
+#alist = ['a', 'd', 'f']
+#alist[1:1] = ['b', 'c']
+#print(alist)
+#alist[4:4] = ['e']
+#print(alist)
+
+# Strings are Immutable 
+#greeting = "Hello, world!"
+#greeting[0] = 'J'            # ERROR!
+#print(greeting)
+
+# Delete operator
+#a = ['one', 'two', 'three']
+#del a[1]
+#print(a)
+#alist = ['a', 'b', 'c', 'd', 'e', 'f']
+#del alist[1:5]
+#print(alist)
+
+# Objects and References
+#a = "banana"
+#b = "banana"
+#print(a is b)
+#print(id(a))
+#print(id(b))
+
+# not for lists
+#a = [81,82,83]
+#b = [81,82,83]
+#print(a is b)
+#print(a == b)
+#print(id(a))
+#print(id(b))
+
+# Aliasing
+#a = [81,82,83]
+#b = [81,82,83]
+#print(a is b)
+#b = a
+#print(a == b)
+#print(a is b)
+#b[0] = 5
+#print(a)
+
+# Clone a list not aliase
+#a = [81,82,83]
+#b = a[:]       # make a clone using slice
+#print(a == b)
+#print(a is b)
+#b[0] = 5
+#print(a)
+#print(b)
+
+
+
+
+
