@@ -389,3 +389,14 @@
 #for i in range(len(numbs)):
 #    numbs[i] = numbs[i]+5
 
+#output = ""
+#for _ in range(35):
+#    output += "a"
+#print(output)
+
+#str1 = "I love python"
+#chars = []
+#for ch in str1:
+#   chars.append(ch)
+#print(chars)
+
