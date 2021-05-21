@@ -114,3 +114,70 @@
 #print(alias is opposites)
 #alias['right'] = 'left'
 #print(opposites['right'])
+
+# Dictionary Accumation
+#f = open('scarlet.txt', 'r')
+#txt = f.read()
+# now txt is one long string containing all the characters
+#x = {} # start with an empty dictionary
+#for c in txt:
+#    if c not in x:
+#        # we have not seen this character before, so initialize a counter for it
+#        x[c] = 0
+#    #whether we've seen it before or not, increment its counter
+#    x[c] = x[c] + 1
+#print("t: " + str(x['t']) + " occurrences")
+#print("s: " + str(x['s']) + " occurrences")
+
+#f = open('scarlet.txt', 'r')
+#txt = f.read()
+## now txt is one long string containing all the characters
+#letter_counts = {} # start with an empty dictionary
+#for c in txt:
+#    if c not in letter_counts:
+#        # we have not seen this character before, so initialize a counter for it
+#        letter_counts[c] = 0
+    #whether we've seen it before or not, increment its counter
+#    letter_counts[c] = letter_counts[c] + 1
+#for c in letter_counts.keys():
+#    print(c + ": " + str(letter_counts[c]) + " occurrences")
+
+#travel = {"North America": 2, "Europe": 8, "South America": 3, "Asia": 4, "Africa":1, "Antarctica": 0, "Australia": 1}
+#total = 0
+#for places in travel:
+#    total += travel[places]
+
+# Create a dictionary called d that keeps track of all the characters in the string placement and notes how many times each 
+# character was seen. Then, find the key with the lowest value in this dictionary and assign that key to min_value.
+#placement = "Beaches are cool places to visit in spring however the Mackinaw Bridge is near. Most people visit Mackinaw later since the island is a cool place to explore."
+#d = {}
+#min_value = None
+#min_value_key = None
+#for char in placement:
+#    if char not in d:
+#        d[char] = 0
+#    d[char]+= 1
+#print(d)
+#for keys in d.keys():
+#    if min_value is None:
+#        min_value = d[keys]
+#        min_value_key = keys
+#    else:
+#        if d[keys]<min_value:
+#            min_value = d[keys]
+#            min_value_key = keys
+#print( min_value_key )     
+#min_value = min_value_key
+
+#product = "iphone and android phones"
+#lett_d = {}
+#for char in product:
+#    if char not in lett_d:
+#        lett_d[char] = 0
+#    lett_d[char] += 1
+#print(lett_d)
+#keys=list(lett_d.keys())
+#max_value = keys[0]
+#for key in lett_d.keys():
+#    if lett_d[key]>lett_d[max_value]:
+#        max_value = key
