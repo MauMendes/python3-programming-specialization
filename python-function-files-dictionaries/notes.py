@@ -181,3 +181,83 @@
 #for key in lett_d.keys():
 #    if lett_d[key]>lett_d[max_value]:
 #        max_value = key
+
+#### WEEK 3 - FUNCTIONS
+#def name( parameters ):
+#    statements
+#def square(x):
+#    y = x * x
+#    return y
+#global variable
+
+## TUPLE PACKING
+#practice = 'y', 'h', 'z', 'x' # by default it is a tuple
+#lst_tups = [('Articuno', 'Moltres', 'Zaptos'), ('Beedrill', 'Metapod', 'Charizard', 'Venasaur', 'Squirtle'), ('Oddish', 'Poliwag', 'Diglett', 'Bellsprout'), ('Ponyta', "Farfetch'd", "Tauros", 'Dragonite'), ('Hoothoot', 'Chikorita', 'Lanturn', 'Flaaffy', 'Unown', 'Teddiursa', 'Phanpy'), ('Loudred', 'Volbeat', 'Wailord', 'Seviper', 'Sealeo')]
+#t_check = list()
+#for item in lst_tups:
+#    t_check.append(item[2])
+
+#t uples-3-1: If you want a function to return two values, contained in variables x and y, which of the following methods will work?
+#B. Include the statement "return [x, y]"
+#C. Include the statement "return (x, y)"
+#D. Include the statement "return x, y"
+#def information(name, birth_year, fav_color, hometown):
+#    return name, birth_year, fav_color, hometown
+
+## TUPLE UNPACKING
+#a = 1
+#b = 2
+#(a, b) = (b, a)
+#print(a, b)
+
+#authors = [('Paul', 'Resnick'), ('Brad', 'Miller'), ('Lauren', 'Murphy')]
+#for first_name, last_name in authors:
+#    print("first name:", first_name, "last name:", last_name)
+
+#fruits = ['apple', 'pear', 'apricot', 'cherry', 'peach']
+#for n in range(len(fruits)):
+#    print(n, fruits[n])
+
+#If you remember, the .items() dictionary method produces a sequence of tuples. Keeping this in mind, we have provided you a dictionary called pokemon. 
+# For every key value pair, append the key to the list p_names, and append the value to the list p_number. Do not use the .keys() or .values() methods.
+#pokemon = {'Rattata': 19, 'Machop': 66, 'Seel': 86, 'Volbeat': 86, 'Solrock': 126}
+#p_names = list()
+#p_number = list()
+#tup = pokemon.items()
+#print(tup)
+#for item in tup:
+#    (name, number) = item
+#    p_number.append(number)
+#    p_names.append(name)
+
+#The .items() method produces a sequence of key-value pair tuples. With this in mind, write code to create a list of keys from the dictionary 
+#track_medal_counts and assign the list to the variable name track_events. Do NOT use the .keys() method.
+#track_medal_counts = {'shot put': 1, 'long jump': 3, '100 meters': 2, '400 meters': 2, '100 meter hurdles': 3, 'triple jump': 3, 'steeplechase': 2, '1500 meters': 1, '5K': 0, '10K': 0, 'marathon': 0, '200 meters': 0, '400 meter hurdles': 0, 'high jump': 1}
+#tup = track_medal_counts.items()
+#track_events = list()
+#for item in tup:
+#    (s, n) = item
+#    track_events.append(s)
+
+#### WEEK 4 - WHILE
+#while {condition}:
+
+#Write a while loop that is initialized at 0 and stops at 15. If the counter is an even number, append the counter to a list called eve_nums.
+#i = 0
+#eve_nums = list()
+#while (15-i)>0:
+#    eve_nums.append(i)
+#    i+= 2
+
+#Below, we’ve provided a for loop that sums all the elements of list1. Write code that accomplishes the same task, but instead uses a while loop. 
+#Assign the accumulator variable to the name accum.
+#list1 = [8, 3, 4, 5, 6, 7, 9]
+#tot = 0
+#for elem in list1:
+#    tot = tot + elem
+#
+#accum = 0
+#i = 0
+#while i<len(list1):
+#    accum += list1[i]
+#    i+=1
