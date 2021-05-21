@@ -84,3 +84,33 @@
 #outfile.close()
 # another way -if all data is string
 #row_string = ','.join(olympian)
+
+#### WEEK 2 - DICTIONARIES
+#eng2esp = {}
+#eng2esp['one'] = 'uno' #key is one, value is uno
+#eng2esp['two'] = 'dos'
+#print(eng2esp)
+
+# Dictionary methods
+# keys()
+#inventory = {'apples': 430, 'bananas': 312, 'oranges': 525, 'pears': 217}
+#for akey in inventory.keys():     # the order in which we get the keys is not defined
+#    print("Got key", akey, "which maps to value", inventory[akey])
+#ks = list(inventory.keys())
+#print(ks)
+# 'apples' in inventory
+# get() - another method to get the value inventory.get('apples'), 
+#places = {"Australia":2000, "Greece":2004, "China":2008, "England":2012}
+#places["Brazil"] = 2016
+#medal_events = {'Shooting': 7, 'Fencing': 4, 'Judo': 2, 'Swimming': 3, 'Diving': 2}
+#events = list()
+#for event in medal_events:
+#    events.append(event)
+#print(events)
+
+# Aliasing and copying
+#opposites = {'up': 'down', 'right': 'wrong', 'true': 'false'}
+#alias = opposites
+#print(alias is opposites)
+#alias['right'] = 'left'
+#print(opposites['right'])
