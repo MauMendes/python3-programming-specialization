@@ -261,3 +261,81 @@
 #while i<len(list1):
 #    accum += list1[i]
 #    i+=1
+
+#Random walking turtles
+#import random
+#import turtle
+#def isInScreen(w, t):
+#    if random.random() > 0.1:
+#        return True
+#    else:
+#        return False
+#t = turtle.Turtle()
+#wn = turtle.Screen()
+#t.shape('turtle')
+#while isInScreen(wn, t):
+#    coin = random.randrange(0, 2)
+#    if coin == 0:              # heads
+#        t.left(90)
+#    else:                      # tails
+#        t.right(90)
+#    t.forward(50)
+#wn.exitonclick()
+
+#import random
+#import turtle
+#def isInScreen(w,t):
+#    leftBound = - w.window_width() / 2
+#    rightBound = w.window_width() / 2
+#    topBound = w.window_height() / 2
+#    bottomBound = -w.window_height() / 2
+#    turtleX = t.xcor()
+#    turtleY = t.ycor()
+#    stillIn = True
+#    if turtleX > rightBound or turtleX < leftBound:
+#        stillIn = False
+#    if turtleY > topBound or turtleY < bottomBound:
+#        stillIn = False
+#    return stillIn
+#t = turtle.Turtle()
+#wn = turtle.Screen()
+#t.shape('turtle')
+#while isInScreen(wn,t):
+#    coin = random.randrange(0, 2)
+#    if coin == 0:
+#        t.left(90)
+#    else:
+#        t.right(90)
+#    t.forward(50)
+#wn.exitonclick()
+
+## Advanced functions
+#number default value, being optional
+#def str_mult(str, number=3):
+#    return str*number
+
+## keyword parameters
+#initial = 7
+#def f(x, y = 3, z = initial):
+#    print("x, y, z are:", x, y, z)
+#f(2, z = 10)
+#print("The scores {nm} got were: {s1},{s2},{s3}.".format(nm=name,s1=scores[0],s2=scores[1],s3=scores[2]))
+
+#def multiply(str,mult_int=10):
+#    return str*mult_int
+
+## LAMBDA EXPRESSION
+#def fname(arguments):
+#    return expression
+#fname = lambda arguments: expression
+#print(lambda x: x-2)
+#print(type(lambda x: x-2))
+#print((lambda x: x-2)(6))
+#(lambda x: -x)
+
+## PROGRAMING STYLE
+#use 4 spaces for indentation
+#imports should go at the top of the file
+#separate function definitions with two blank lines
+#keep function definitions together
+#keep top level statements, including function calls, together at the bottom of the program
