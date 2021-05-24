@@ -3,7 +3,7 @@ Exercises and projects made in the Python 3 Programming Specialization offered b
 
 ### Python Basics  :heavy_check_mark:
 
-### Python Functions, Files, and Dictionaries
+### Python Functions, Files, and Dictionaries  :heavy_check_mark:
 
 ### Data Collection and Processing with Python
 
