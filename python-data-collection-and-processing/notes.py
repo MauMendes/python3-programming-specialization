@@ -112,3 +112,73 @@ print(shallow_copy_version)
 #[['canines', ['dogs', 'puppies']], ['felines', ['cats', 'kittens']]]
 #-------- shallow copy -----------
 #[['canines', ['dogs', 'puppies'], ['marsupials']], ['felines', ['cats', 'kittens']]]
+
+
+#### WEEK2 - MAP, FILTER
+def triple(value):
+    return 3*value
+def tripleStuff(a_list):
+    new_seq = map(triple, a_list)
+    return list(new_seq)
+def quadrupleStuff(a_list):
+    new_seq = map(lambda value: 4*value, a_list)
+    return list(new_seq)
+things = [2, 5, 9]
+things3 = tripleStuff(things)
+print(things3)
+things4 = quadrupleStuff(things)
+print(things4)
+
+lst = [["hi", "bye"], "hello", "goodbye", [9, 2], 4]
+greeting_doubled = map(lambda x: x*2, lst)
+print(greeting_doubled)
+
+abbrevs = ["usa", "esp", "chn", "jpn", "mex", "can", "rus", "rsa", "jam"]
+abbrevs_upper = map(lambda x:x.upper(),abbrevs)
+print(abbrevs_upper)
+
+### FILTER
+def keep_evens(nums):
+    new_seq = filter(lambda num: num % 2 == 0, nums)
+    return list(new_seq)
+print(keep_evens([3, 4, 6, 7, 0, 1]))
+
+lst_check = ['plums', 'watermelon', 'kiwi', 'strawberries', 'blueberries', 'peaches', 'apples', 'mangos', 'papaya']
+def filter_w(word):
+    if 'w' in word:
+        return word
+filter_testing = filter(filter_w ,lst_check)
+print(filter_testing)
+filter(lambda word: 'w' in word ,lst)
+
+### LIST COMPREHENSIONS
+[<transformer_expression> for <loop_var> in <sequence> if <filtration_expression>]
+
+things = [2, 5, 9]
+yourlist = [value * 2 for value in things]
+print(yourlist)
+
+things = [3, 4, 6, 7, 0, 1]
+#chaining together filter and map:
+# first, filter to keep only the even numbers
+# double each of them
+print(map(lambda x: x*2, filter(lambda y: y % 2 == 0, things)))
+
+# equivalent version using list comprehension
+print([x*2 for x in things if x % 2 == 0])
+
+#The for loop below produces a list of numbers greater than 10.
+lst2 = [num for num in L if num>10]
+
+#Write code to assign to the variable compri all the values of the key name in any of the sub-dictionaries in the dictionary tester. Do this using a list comprehension.
+tester = {'info': [{"name": "Lauren", 'class standing': 'Junior', 'major': "Information Science"},{'name': 'Ayo', 'class standing': "Bachelor's", 'major': 'Information Science'}, {'name': 'Kathryn', 'class standing': 'Senior', 'major': 'Sociology'}, {'name': 'Nick', 'class standing': 'Junior', 'major': 'Computer Science'}, {'name': 'Gladys', 'class standing': 'Sophomore', 'major': 'History'}, {'name': 'Adam', 'major': 'Violin Performance', 'class standing': 'Senior'}]}
+inner_list = tester['info']
+compri = [d['name'] for d in inner_list]
+print(compri)
+
+### ZIP
+L1 = [3, 4, 5]
+L2 = [1, 2, 3]
+L3 = [x1 + x2 for (x1, x2) in list(zip(L1, L2))]
+print(L3)
+#[4, 6, 8]
