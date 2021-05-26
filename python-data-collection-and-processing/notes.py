@@ -182,3 +182,19 @@ L2 = [1, 2, 3]
 L3 = [x1 + x2 for (x1, x2) in list(zip(L1, L2))]
 print(L3)
 #[4, 6, 8]
+
+### WEEK 3 - HTTP/REST API
+import requests
+import json
+
+page = requests.get("https://api.datamuse.com/words?rel_rhy=funny")
+print(type(page))
+print(page.text[:150]) # print the first 150 characters
+print(page.url) # print the url that was fetched
+print("------")
+x = page.json() # turn page.text into a python object
+print(type(x))
+print("---first item in the list---")
+print(x[0])
+print("---the whole list, pretty printed---")
+print(json.dumps(x, indent=4)) # pretty print the results
