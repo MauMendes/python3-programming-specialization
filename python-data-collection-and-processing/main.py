@@ -55,12 +55,11 @@ from requests.api import request
 #    return [d['word'] for d in words_ds]
 #print(get_rhymes("funny"))
 
-
-import requests_with_caching
+#import requests_with_caching
 # it's not found in the permanent cache
-res = requests_with_caching.get("https://api.datamuse.com/words?rel_rhy=happy")
-print(res.text[:100])
+#res = requests_with_caching.get("https://api.datamuse.com/words?rel_rhy=happy")
+#print(res.text[:100])
 # this time it will be found in the temporary cache
-res = requests_with_caching.get("https://api.datamuse.com/words?rel_rhy=happy", permanent_cache_file="datamuse_cache.txt")
+#res = requests_with_caching.get("https://api.datamuse.com/words?rel_rhy=happy", permanent_cache_file="datamuse_cache.txt")
 # This one is in the permanent cache.
-res = requests_with_caching.get("https://api.datamuse.com/words?rel_rhy=funny", permanent_cache_file="datamuse_cache.txt")
+#res = requests_with_caching.get("https://api.datamuse.com/words?rel_rhy=funny", permanent_cache_file="datamuse_cache.txt")
