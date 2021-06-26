@@ -238,3 +238,147 @@
 #rint(p1.graph())
 #print()
 #print(p2.graph())
+
+
+### WEEK 2
+#CURRENT_YEAR = 2021
+#class Person:
+#    def __init__(self, name, year_born):
+#        self.name = name
+#        self.year_born = year_born
+#    def getAge(self):
+#        return CURRENT_YEAR - self.year_born
+#    def __str__(self):
+#        return "{} ({})".format(self.name, self.getAge())
+#
+#alice = Person('Alice Smith', 1990)
+#print(alice)
+#
+#class Student:
+#    def __init__(self, name, year_born):
+#        self.name = name
+#        self.year_born = year_born
+#        self.knowledge = 0
+#    def getAge(self):
+#        return CURRENT_YEAR - self.year_born
+#    def study(self):
+#        self.knowledge += 1#
+#
+#    def __str__(self):
+#       return "{} ({})".format(self.name, self.getAge())
+##
+# USING Inheritance
+#class Student(Person):
+#    def __init__(self, name, year_born):
+#        Person.__init__(self, name, year_born)
+#       self.knowledge = 0
+#   def study(self):
+#      self.knowledge += 1
+##alice = Student('Alice Smith', 1990)
+##print(alice)
+#print(alice.knowledge)
+#alice.study()
+#print(alice.knowledge)
+
+### OVERRIDING METHODS
+#class Book():
+#    def __init__(self,title, author):
+#        self.title = title
+#        self.author = author
+#    def __str__(self) -> str:
+#        return "{} by {}".format(self.title, self.author)
+#
+#class PaperBook(Book):
+#    def __init__(self, title, author, numPages):
+#        Book.__init__(self, title, author)
+#        self.numPages = numPages
+#    def __str__(self):
+#        return "Paperbook overrite the Book __str__"
+#
+#class EBook(Book):
+#    def __init__(self, title, author, size):
+#        Book.__init__(self, title, author)
+#        self.size = size#
+#
+#myBook = EBook("the odyssey", "homer", 2)
+#myPaperBoook = PaperBook("the odyssey", "homer", 500)
+#print(myBook)
+#print(myBook.size)
+#print(myPaperBoook)
+#print(myPaperBoook.numPages)
+#
+#class Library():
+#    def __init__(self):
+#        self.books = []
+#    def addBook(self, book):
+#        self.books.append(book)
+#    def getNumBooks(self):
+#        return len(self.books)
+#        
+#new_library = Library()
+#new_library.addBook(myBook)
+#new_library.addBook(myPaperBoook)
+#print(new_library.getNumBooks())
+
+### INVOKING The PARENT CLASS METHODS
+#from random import randrange
+# Here's the original Pet class
+#class Pet():
+#    boredom_decrement = 4
+#    hunger_decrement = 6
+#    boredom_threshold = 5
+#    hunger_threshold = 10
+#    sounds = ['Mrrp']
+#    def __init__(self, name = "Kitty"):
+#        self.name = name
+#        self.hunger = randrange(self.hunger_threshold)
+#        self.boredom = randrange(self.boredom_threshold)
+#        self.sounds = self.sounds[:]  # copy the class attribute, so that when we make changes to it, we won't affect the other Pets in the class
+#
+#    def clock_tick(self):
+#        self.boredom += 1
+#        self.hunger += 1
+#
+#    def mood(self):
+#        if self.hunger <= self.hunger_threshold and self.boredom <= self.boredom_threshold:
+#            return "happy"
+#        elif self.hunger > self.hunger_threshold:
+#           return "hungry"
+#       else:
+#            return "bored"#
+#
+#    def __str__(self):
+#        state = "     I'm " + self.name + ". "
+#        state += " I feel " + self.mood() + ". "
+#        # state += "Hunger %d Boredom %d Words %s" % (self.hunger, self.boredom, self.sounds)
+#        return state
+#
+#    def hi(self):
+#        print(self.sounds[randrange(len(self.sounds))])
+#       self.reduce_boredom()
+#
+#    def teach(self, word):
+#        self.sounds.append(word)
+#        self.reduce_boredom()
+#
+#    def feed(self):
+#       self.reduce_hunger()
+#
+#    def reduce_hunger(self):
+#        self.hunger = max(0, self.hunger - self.hunger_decrement)
+#
+#    def reduce_boredom(self):
+#        self.boredom = max(0, self.boredom - self.boredom_decrement)
+#
+#class Dog(Pet):
+#    sounds = ['Woof', 'Ruff']
+#
+#    def feed(self):
+#        Pet.feed(self)
+#        print("Arf! Thanks!")
+#
+#d1 = Dog("Astro")
+#d1.feed()
+#print(d1.sounds)
+#print(Pet.sounds)
+
