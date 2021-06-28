@@ -434,17 +434,17 @@
 #   <try clause code block>
 #except <ErrorType>:
 #   <exception handler code block>
-items = ['a', 'b']
-try:
-    third = items[2]
-except:
-    print("catched an except")
-
-try:
-    items = ['a', 'b']
-    third = items[2]
-    print("This won't print")
-except Exception as e:
-    print("got an error")
-    print(e)
-print("continuing")
+#items = ['a', 'b']
+#try:
+#    third = items[2]
+#except:
+#    print("catched an except")
+#
+#try:
+#    items = ['a', 'b']
+#    third = items[2]
+#    print("This won't print")
+#except Exception as e:
+#    print("got an error")
+#    print(e)
+#print("continuing")
