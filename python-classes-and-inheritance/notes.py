@@ -382,3 +382,50 @@
 #print(d1.sounds)
 #print(Pet.sounds)
 
+### WEEK 3 Test Cases
+#def square(x):
+#    return x*x
+#
+#def testEqual(actual,expected,places=5):
+#    '''
+#    Does the actual value equal the expected value?
+#    For floats, places indicates how many places, right of the decimal, must be correct
+#    '''
+#    if isinstance(expected,float):
+#        if abs(actual-expected) < 10**(-places):
+#        print('\tPass')
+#            return True
+#    else:
+#        if actual == expected:
+#            print('\tPass')
+#            return True
+#    print('\tTest Failed: expected {} but got {}'.format(expected,actual))
+#    return False
+#
+#import test
+#print('testing square function')
+#test.testEqual(square(10),100)
+#
+#def update_counts(letters, counts_d):
+#    for c in letters:
+#        if c in counts_d:
+#            counts_d[c] = counts_d[c] + 1
+#        else :
+#            counts_d[c] = 1
+#counts = {'a': 3, 'b': 2}
+#update_counts("aaab", counts)
+# 3 more occurrences of a, so 6 in all
+#assert counts['a'] == 6
+# 1 more occurrence of b, so 3 in all
+#assert counts['b'] == 3
+#
+#import math
+#def distance(x1, y1, x2, y2):
+#   delta_x = x2-x1
+#   delta_y = y2-y1
+#    return math.sqrt((delta_x ** 2)+(delta_y ** 2))
+#
+#assert distance(1, 2, 1, 2) == 0
+#assert distance(1,2, 4,6) == 5
+#assert distance(0,0, 1,1) == 2**0.5
+
