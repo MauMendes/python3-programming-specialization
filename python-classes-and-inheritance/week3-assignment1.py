@@ -31,7 +31,7 @@ assert mySum(mlist) == 3
 #
 #print(a1.study())
 #print("knowledge: {}".format(a1.knowledge))
-#print("getKnowledge: {}".format(a1.getKnowledge()))
+#print("getKnowledge: {}".format(a1.getKnowledge()))git 
 #print("year_at_umich: {}".format(a1.year_at_umich()))
 
 #ANSWERS: C. the attributes/instance variables are not correctly assigned in the constructor D. the method study does not increase self.knowledge

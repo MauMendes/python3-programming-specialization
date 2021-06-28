@@ -429,3 +429,22 @@
 #assert distance(1,2, 4,6) == 5
 #assert distance(0,0, 1,1) == 2**0.5
 
+###Exception Handling Flow-of-control
+#try:
+#   <try clause code block>
+#except <ErrorType>:
+#   <exception handler code block>
+items = ['a', 'b']
+try:
+    third = items[2]
+except:
+    print("catched an except")
+
+try:
+    items = ['a', 'b']
+    third = items[2]
+    print("This won't print")
+except Exception as e:
+    print("got an error")
+    print(e)
+print("continuing")
