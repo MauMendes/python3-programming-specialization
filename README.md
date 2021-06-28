@@ -7,7 +7,7 @@ Exercises and projects made in the Python 3 Programming Specialization offered b
 
 ### Data Collection and Processing with Python :heavy_check_mark:
 
-### Python Classes and Inheritance
+### Python Classes and Inheritance :heavy_check_mark:
 
 ### Python Project: pillow, tesseract, and opencv
 
