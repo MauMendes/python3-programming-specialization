@@ -30,6 +30,14 @@
 # GPL licensed. 
 #
 # 
+# We have to install pytesseract
+# pip install pytesseract 
+#
+# and install in the windows https://stackoverflow.com/questions/50951955/pytesseract-tesseractnotfound-error-tesseract-is-not-installed-or-its-not-i
+# https://github.com/UB-Mannheim/tesseract/wiki
+# 
+#
+
 
 
 
