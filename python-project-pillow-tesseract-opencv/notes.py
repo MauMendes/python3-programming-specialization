@@ -14,8 +14,23 @@
 #Pillow
 
 #### WEEK 2
-#Tesseract
-#Open source Software
+# Tesseract - Apache, 
+# pytesseract license - GPL
+# 
+#### Open source Software
+# Pros: "it lowers consumer cost and increases code flexibility, security, and accountability due to its community source nature,
+# and there's good business sense to using open-source software tool"
+#
+# Apache License: allows linking of Apache lincense code with differently license code. Useful if you want to attach closed-source library 
+# or proprietary library in your open source project
+#
+# GNU Public License or GPL: one can link only other GPL compatible libraries. You may find this license feature desirable if
+# your Open Source project is composed of entirely open-source code, and you wish to ensure that this always be the case, regardless of who in the future uses your code. 
+# The GPL is probably the most well-known and perhaps common open-source software license, and part due to its viral nature, which requires all link to software to also be 
+# GPL licensed. 
+#
+# 
+
 
 
 
