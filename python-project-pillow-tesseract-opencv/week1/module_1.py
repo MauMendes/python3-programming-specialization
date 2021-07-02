@@ -4,14 +4,14 @@
 # ## The Python Imaging Library (PIL)
 # The Python Imaging Library, which is known as PIL or PILLOW, is the main library we use in python for dealing with image files. This library is not included with python - it's what's known as a third party library, which means you have to download and install it yourself. In the Coursera system, this has all been done for you. Lets do a little exploring of pillow in the jupyter notebooks.
 
-# In[1]:
+# In[2]:
 
 
 # You'll recall that we import a library using the `import` keyword.
 import PIL
 
 
-# In[2]:
+# In[3]:
 
 
 # Documentation is a big help in learning a library. There exist standards that make this process easier. 
@@ -19,7 +19,7 @@ import PIL
 PIL.__version__
 
 
-# In[3]:
+# In[4]:
 
 
 # Let's figure out how to open an image with `Pillow`. Python provides some built-in functions to help us
@@ -29,7 +29,7 @@ PIL.__version__
 help(PIL)
 
 
-# In[4]:
+# In[5]:
 
 
 # This shows us that there are a host of classes available to us in the module, as well as version information 
@@ -43,7 +43,7 @@ help(PIL)
 dir(PIL)
 
 
-# In[5]:
+# In[6]:
 
 
 # At the top of the list, there is something called Image. This sounds like it could be interesting, so lets 
@@ -54,7 +54,7 @@ help(Image)
 
 # Running help() on Image tells us that this object is "the Image class wrapper". We see from the top level documentation about the image object that there is "hardly ever any reason to call the Image constructor directly", and they suggest that the open function might be the way to go.
 
-# In[6]:
+# In[7]:
 
 
 # Lets call help on the open function to see what it's all about. Remember that since we want to pass in the
@@ -89,7 +89,7 @@ print("The type of the image is " + str(type(image)))
 inspect.getmro(type(image))
 
 
-# In[11]:
+# In[10]:
 
 
 # Now that we are comfortable with the object. How do we view the image? It turns out that the
@@ -118,7 +118,7 @@ display(image)
 # ## Common Functions in the Python Imaging Library
 # Lets take a look at some of the common tasks we can do in python using the pillow library.
 
-# In[13]:
+# In[11]:
 
 
 # First, lets import the PIL library and the Image object
@@ -131,7 +131,7 @@ file="readonly/msi_recruitment.gif"
 image=Image.open(file)
 
 
-# In[14]:
+# In[12]:
 
 
 # Great, now lets check out a few more methods of the image library. First, we'll look at copy
@@ -145,7 +145,7 @@ help(image.copy)
 
 
 
-# In[15]:
+# In[13]:
 
 
 # We can see that copy takes no arguments, and that the return object is an Image object itself. Now lets
@@ -153,7 +153,7 @@ help(image.copy)
 help(image.save)
 
 
-# In[16]:
+# In[14]:
 
 
 # The save method has a couple of parameters which are interesting. The first, called fp, is the filename
@@ -167,7 +167,7 @@ import inspect
 inspect.getmro(type(image))
 
 
-# In[17]:
+# In[15]:
 
 
 # Indeed, this created a new file, which we could view by going to the Jupyter notebook file list by clicking
@@ -182,7 +182,7 @@ from PIL import ImageFilter
 help(ImageFilter)
 
 
-# In[18]:
+# In[16]:
 
 
 # There are a bunch of different filters here, but lets just try and apply the BLUR filter. Before we do this
@@ -197,7 +197,7 @@ blurred_image=image.filter(PIL.ImageFilter.BLUR)
 display(blurred_image)
 
 
-# In[19]:
+# In[17]:
 
 
 # Ok, let me show you one more function in the lecture, which is crop(). This removes portions of the image
@@ -207,7 +207,7 @@ display(blurred_image)
 print("{}x{}".format(image.width, image.height))
 
 
-# In[20]:
+# In[18]:
 
 
 # This means that the image is 800 pixels wide (the X axis), and 450 pixels high (the Y axis). If we take a 
@@ -216,7 +216,7 @@ print("{}x{}".format(image.width, image.height))
 help(image.crop)
 
 
-# In[21]:
+# In[19]:
 
 
 # With PIL images, we define the bounding box using the upper left corner and the lower right corner. And
@@ -230,7 +230,7 @@ help(image.crop)
 display(image.crop((50,0,190,150)))
 
 
-# In[22]:
+# In[20]:
 
 
 # Of course crop(), like other functions, only returns a copy of the image, and doesn't change the image itself.
@@ -248,37 +248,37 @@ display(image)
 # ## Additional PILLOW functions
 # Lets take a look at some other functions we might want to use in PILLOW to modify images.
 
+# In[21]:
+
+
+# First, lets import all of the library functions we need
+import PIL
+from PIL import Image
+from IPython.display import display
+
+# And lets load the image we were working, and we can just convert it to RGB inline
+file="readonly/msi_recruitment.gif"
+image=Image.open(file).convert('RGB')
+
+display(image)
+
+
+# In[22]:
+
+
+# First, lets import all of the library functions we need
+import PIL
+from PIL import Image
+from IPython.display import display
+
+# And lets load the image we were working, and we can just convert it to RGB inline
+file="readonly/msi_recruitment.gif"
+image=Image.open(file).convert('RGB')
+
+display(image)
+
+
 # In[23]:
-
-
-# First, lets import all of the library functions we need
-import PIL
-from PIL import Image
-from IPython.display import display
-
-# And lets load the image we were working, and we can just convert it to RGB inline
-file="readonly/msi_recruitment.gif"
-image=Image.open(file).convert('RGB')
-
-display(image)
-
-
-# In[24]:
-
-
-# First, lets import all of the library functions we need
-import PIL
-from PIL import Image
-from IPython.display import display
-
-# And lets load the image we were working, and we can just convert it to RGB inline
-file="readonly/msi_recruitment.gif"
-image=Image.open(file).convert('RGB')
-
-display(image)
-
-
-# In[25]:
 
 
 # A task that is fairly common in image and picture manipulation is to create contact sheets of images.
@@ -308,7 +308,7 @@ for i in range(0, 10):
 print(images)
 
 
-# In[26]:
+# In[24]:
 
 
 # Lets take these images now and composite them, one above another, in a contact sheet.
@@ -317,7 +317,7 @@ print(images)
 help(PIL.Image.new)
 
 
-# In[27]:
+# In[25]:
 
 
 # The new function requires that we pass it a mode. We're going to use the mode 'RGB' which stands for
@@ -352,7 +352,7 @@ contact_sheet = contact_sheet.resize((160,900) )
 display(contact_sheet)
 
 
-# In[28]:
+# In[26]:
 
 
 # Ok, that's a nice proof of concept. But it's a little tough to see. Lets instead change this to a three
@@ -390,3 +390,9 @@ display(contact_sheet)
 # Well, that's been a tour of our first external API, the Python Imaging Library, or pillow module. In this series of lectures you've learned how to read and write images, manipulat them with pillow, and explore the functionality of third party APIs using features of Python like dir(), help(), and getmro(). You've also been introduced to the console, and how python stores these libraries on the computer. While for this course all of the libraries are included for you in the Coursera system, and you won't need to install your own, it's good to get a the idea of how this work in case you wanted to set this up on your own.
 # 
 # Finally, while you can explore PILLOW from within python, most good modules also put their documentation up online, and you can read more about PILLOW here: https://pillow.readthedocs.io/en/latest/
+
+# In[ ]:
+
+
+
+
