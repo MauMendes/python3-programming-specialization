@@ -98,4 +98,4 @@ Created on Sat Jul  3 09:42:37 2021
 #else:
 #    print('Couldnt decode any text!')
 
-
+import cv2 as cv

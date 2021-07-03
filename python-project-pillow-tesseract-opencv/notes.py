@@ -36,7 +36,9 @@
 # and install in the windows https://stackoverflow.com/questions/50951955/pytesseract-tesseractnotfound-error-tesseract-is-not-installed-or-its-not-i
 # https://github.com/UB-Mannheim/tesseract/wiki
 # 
-#
+#### WEEK 3
+# library Kraken - detect lines of text as bounding boxes
+# pip install kraken
 
 
 
