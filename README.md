@@ -9,7 +9,7 @@ Exercises and projects made in the Python 3 Programming Specialization offered b
 
 ### Python Classes and Inheritance :heavy_check_mark:
 
-### Python Project: pillow, tesseract, and opencv
+### Python Project: pillow, tesseract, and opencv :heavy_check_mark:
 
 Important links: 
 
